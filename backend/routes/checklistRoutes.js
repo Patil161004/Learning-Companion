@@ -1,10 +1,12 @@
 import express from 'express';
-import { addToChecklist, getChecklist } from '../controllers/checklistController.js';
+import { getChecklist, addChecklistItem, updateChecklistItem, deleteChecklistItem } from '../controllers/checklistController.js';
 import auth from '../middleware/auth.js';
 
 const router = express.Router();
 
-router.post('/add', auth, addToChecklist);
 router.get('/', auth, getChecklist);
+router.post('/', auth, addChecklistItem);
+router.patch('/:id', auth, updateChecklistItem);
+router.delete('/:id', auth, deleteChecklistItem);
 
 export default router;

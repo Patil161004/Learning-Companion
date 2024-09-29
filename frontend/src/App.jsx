@@ -1,3 +1,4 @@
+// frontend/src/App.jsx
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
@@ -6,6 +7,7 @@ import Chatbot from './pages/Chatbot';
 import Checklist from './pages/Checklist';
 import ChatHistory from './pages/ChatHistory';
 import RoadmapHistory from './pages/RoadmapHistory';
+import InterviewQuestions from './pages/Interview';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Navbar from './components/Navbar';
@@ -29,6 +31,7 @@ function App() {
             <Route path="/checklist" element={<Checklist />} />
             <Route path="/chat-history" element={<ChatHistory />} />
             <Route path="/roadmap-history" element={<RoadmapHistory />} />
+            <Route path="/interview-questions" element={<InterviewQuestions />} />
             <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/signup" element={<Signup />} />
           </Routes>

@@ -18,7 +18,7 @@ export const askGemini = async (prompt) => {
 };
 
 export const getRoadmapFromGeminiAPI = async (topic, weeks) => {
-  const prompt = `Generate a ${weeks}-week learning roadmap for the topic: "${topic}". For each week, include the following sections: Learning Objectives, Resources, and Practice Exercises. Format the roadmap as follows:
+  const prompt = `Generate a ${weeks}-week learning roadmap for the topic: "${topic}". For each week, include the following sections: Learning Objectives, Resources, and Practice Exercises.Resources should contain links of "${topic}" related coursers and practice exercises should have coding question links from various resources (eg. leetcode,haackerrank,etc)  Format the roadmap as follows:
 
 **Week 1: [Topic]**
 Learning Objectives:
@@ -42,3 +42,4 @@ Practice Exercises:
     throw new Error('Failed to generate roadmap from Gemini API');
   }
 };
+
