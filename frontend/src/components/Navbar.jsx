@@ -17,7 +17,7 @@ export default function Navbar({ setIsSidebarOpen, isLoggedIn, setIsLoggedIn }) 
             </button>
             <Link to="/" className="flex items-center">
               <BookOpen className="h-8 w-8 text-indigo-600 dark:text-indigo-400" />
-              <span className="ml-2 text-xl font-bold text-gray-900 dark:text-white">Learning Companion</span>
+              <span className="ml-2 text-xl font-bold text-gray-900 dark:text-white">EduNova</span>
             </Link>
           </div>
           <div className="flex items-center space-x-4">
